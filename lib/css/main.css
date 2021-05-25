@@ -1,0 +1,20 @@
+#body{
+    display: flex;
+}
+
+#sidebar{
+    background-color: black;
+    color: white;
+    width: 20%;
+    height: 100%;
+}
+
+#name{
+    transform: rotate(-90deg);
+    height: 300;
+}
+
+#contact{
+    width: 20%;
+    align-content: center;
+}
