@@ -1,8 +1,9 @@
 #body{
     display: flex;
     flex-flow: row;
-    
-    height: 1000px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #sidebar{
@@ -18,16 +19,18 @@
 #mainbody{
     flex-grow: 2;
     margin: 10px;
+    height: 100%;
 }
 
 .mbsection{
     border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .namesection{
     width: 120%;
     align-content: center;
-    transform: translate(-10%, 55%) rotate(-90deg);
+    transform: translate(-10%, 65%) rotate(-90deg);
 }
 
 #contact{
@@ -35,14 +38,27 @@
 }
 
 #contactlinks{
-    font-size: small;
+    font-size: x-small;
+}
+
+#about{
+    height: 15%;
+}
+
+#education{
+    height: 15%;
+}
+
+#experience{
+    height: 45%;
 }
 
 #skills{
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-    height: 200px;
+    max-height: 175px;
+    height: 25%;
 }
 
 .skill{
