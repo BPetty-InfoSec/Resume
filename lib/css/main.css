@@ -41,6 +41,12 @@
     font-size: x-small;
 }
 
+a.contactlink{
+    color: white;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
 #about{
     height: 15%;
 }
