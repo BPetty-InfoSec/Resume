@@ -1,27 +1,56 @@
 #body{
     display: flex;
+    flex-flow: row;
+    
+    height: 1000px;
 }
 
 #sidebar{
     background-color: black;
     color: white;
-    width: 20%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    flex-grow: 1;
 }
 
-#name{
-    transform: rotate(-90deg);
-    height: 300;
+#mainbody{
+    flex-grow: 2;
+    margin: 10px;
+}
+
+.mbsection{
+    border-top: 1px solid gray;
+}
+
+.namesection{
+    width: 120%;
+    align-content: center;
+    transform: translate(-10%, 55%) rotate(-90deg);
 }
 
 #contact{
-    width: 20%;
-    align-content: center;
+    align-self: center;
+}
+
+#contactlinks{
+    font-size: small;
+}
+
+#skills{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    height: 200px;
 }
 
 .skill{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 25%;
     justify-content: space-between;
+}
+.skill_rating{
+    margin: 3px;
 }
