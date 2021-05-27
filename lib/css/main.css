@@ -25,6 +25,7 @@
 .mbsection{
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    padding: 0 0 5px 0;
 }
 
 .namesection{
@@ -53,6 +54,21 @@ a.contactlink{
 
 #education{
     height: 15%;
+}
+
+.edu_line{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.edu_date{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.edu_data{
+    flex-grow: 10;
 }
 
 #experience{
