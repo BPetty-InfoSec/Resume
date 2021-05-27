@@ -59,6 +59,42 @@ a.contactlink{
     height: 45%;
 }
 
+.exp_section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.exp_date{
+    font-size: small;
+    margin-right: 3px;
+    width: 7%;
+}
+
+.exp_rightside{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.exp_title{
+    font-size: large;
+    font-weight: bold;
+}
+
+.exp_place{
+    font-style: italic;
+}
+
+.exp_list{
+    margin: 0px;
+}
+
+.exp_bullets{
+    font-size: smaller;
+}
+
 #skills{
     display: flex;
     flex-flow: column wrap;
