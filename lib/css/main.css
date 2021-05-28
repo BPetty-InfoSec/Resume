@@ -1,9 +1,14 @@
+img{
+    max-width: 100%;
+}
+
 #body{
     display: flex;
     flex-flow: row;
     height: 100%;
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
 }
 
 #sidebar{
@@ -27,6 +32,7 @@
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding: 0 0 5px 0;
+    max-width: 100%;
 }
 
 .namesection{
@@ -128,4 +134,8 @@ a.contactlink{
 }
 .skill_rating{
     margin: 3px;
+}
+
+@media (min-width: 768px){
+
 }
