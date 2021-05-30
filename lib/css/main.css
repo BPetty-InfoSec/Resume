@@ -11,9 +11,17 @@ img{
     max-width: 100%;
 }
 
-#sidebar{
+#sidebars{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sidebar{
     background-color: black;
     color: white;
+}
+
+#sidebar-top{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,6 +47,16 @@ img{
     width: 120%;
     align-content: center;
     transform: translate(-10%, 65%) rotate(-90deg);
+}
+
+#name{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#subname{
+    font-style: italic;
+    font-size: large;
 }
 
 #contact{
@@ -136,6 +154,26 @@ a.contactlink{
     margin: 3px;
 }
 
-@media (min-width: 768px){
+@media (max-width: 1372px){
+    #name{
+        font-size: large;
+    }
 
+    #subname{
+        font-size: medium;
+    }
+}
+
+@media (max-width: 1300px){
+    #name{
+        font-size: medium;
+    }
+
+    #subname{
+        font-size: small;
+    }
+
+    #contactlinks{
+        font-size: xx-small;
+    }
 }
