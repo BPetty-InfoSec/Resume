@@ -25,13 +25,17 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 25%;
+    width: 10em;
     flex-grow: 1;
     max-width: 185px;
 }
 
+#sidebar-bottom{
+    flex-grow: 1;
+}
+
 #mainbody{
-    flex-grow: 2;
+    flex-grow: 5;
     margin: 10px;
     height: 100%;
 }
@@ -176,4 +180,8 @@ a.contactlink{
     #contactlinks{
         font-size: xx-small;
     }
+}
+
+@media (max-width: 720px){
+    
 }
