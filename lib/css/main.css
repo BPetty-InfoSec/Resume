@@ -57,6 +57,7 @@ img{
 .namesection{
     width: 120%;
     align-content: center;
+    justify-content: center;
     transform: translate(-10%, 65%) rotate(-90deg);
 }
 
@@ -67,7 +68,7 @@ img{
 
 #subname{
     font-style: italic;
-    font-size: large;
+    font-size: 12px;
 }
 
 #contact{
