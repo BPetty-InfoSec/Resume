@@ -31,7 +31,14 @@ img{
 }
 
 #sidebar-bottom{
+    display: flex;
     flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#sidebar-bottom.h2{
+    box-align: center;
 }
 
 #mainbody{
@@ -152,10 +159,11 @@ a.contactlink{
     display: flex;
     flex-direction: row;
     width: 25%;
-    justify-content: space-between;
 }
-.skill_rating{
-    margin: 3px;
+
+.fa-check{
+    flex-shrink: 1;
+    margin: 5px;
 }
 
 @media (max-width: 1372px){
