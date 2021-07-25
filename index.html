@@ -12,9 +12,12 @@
         <meta name="msapplication-TileColor" content="#ccccff">
         <meta name="theme-color" content="#ccccff">
         <script src="https://resume.bpetty.tech/lib/js/fontawesome-attribution.js"></script>
+        <script src="lib/js/jquery-3.6.0.min.js"></script>
+        <script src="lib/js/mobilerender.js"></script>
         <title>Brian's Resume</title>
     </head>
     <body id="body">
+        <hr>
         <div id="sidebars">
             <div id="sidebar-top" class="sidebar">
             <div class="namesection">
@@ -37,12 +40,12 @@
             </div>
         </div>
         <div id="mainbody">
-            <article id="about" class="mbsection">
-                <h2 class="mbsection_title">ABOUT ME</h2>
+            <details id="about" class="mbsection" open="open">
+                <summary class="mbsectiontitle"">ABOUT ME</summary>
                 <p class="mbsection_blurb">I am a lifelong learner with a passion for computers, networking, and security. Recently I have completed my degree in Information Systems Security, with a concentration in cybersecurity, which has only whet my appetite for information security. I am looking for a position to begin working my way into the industry.</p>
-            </article>
-            <article id="education" class="mbsection">
-                <h2 class="mbsection_title">EDUCATION</h2>
+            </details>
+            <details id="education" class="mbsection" open="open">
+                <summary>EDUCATION</summary>
                 <div class="mbsection_sub">
                     <h3 id="education" class="mbsection_subtitle">American Public University</h3>
                     <div class="edu_line">
@@ -50,9 +53,9 @@
                         <div class="edu_data">B.S. in Information Systems Security (Concentration in Cybersecurity)</div>
                     </div>
                 </div>
-            </article>
-            <article id="experience" class="mbsection">
-                <h2 class="mbsection_title">EXPERIENCE</h2>
+            </details>
+            <details id="experience" class="mbsection" open="open">
+                <summary>EXPERIENCE</summary>
                 <div class="exp_section">
                     <div class="exp_date">2020-Present</div>
                     <div class="exp_rightside">
@@ -82,9 +85,9 @@
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="mbsection">
-                <h2 class="mbsection_title">SKILLS</h2>
+            </details>
+            <details class="mbsection" open="open">
+                <summary>SKILLS</summary>
                 <ul id="skills">
                     <div class="skill">
                         <i class="fa fa-check"></i>
@@ -159,7 +162,7 @@
                         <div class="skill_item">Patience</div>
                     </div>
                 </ul>
-            </article>
+            </details>
         </div>
     </body>
 </html>
