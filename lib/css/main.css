@@ -1,183 +1,184 @@
-img{
-    max-width: 100%;
+html{
+    height: 100%;
 }
 
-#body{
-/*    display: flex;
-    flex-flow: row; */
+body{
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
 }
 
 aside{
-    width: 10%;
-    display: flex;
-    flex-direction: column;
-    float: left;
-    background-color: black;
-    color: white;
-}
-
-/*#sidebars{
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-}
-
-.sidebar{
-    background-color: black;
-    color: white;
-    height: 100%;
-    width: 15%;
-}
-*/
-#sidebar-top{
+    width: 20%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 10%;
-    flex-grow: 1;
-    font-size: 10vw;
-}
-
-#sidebar-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    width: 10%;
-}
-
-#sidebar-bottom.h2{
-    justify-content: center;
     height: 100%;
-}
-
-.namesection{
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-}
-
-#mainbody{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 5;
-    margin: 10px;
-    height: 100%;
-}
-
-.mbsection{
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    padding: 0 0 5px 0;
-    flex-grow: 2;
-    max-width: 100%;
-    height: 25%;
-}
-
-#name{
-    font-weight: bold;
-    font-size: x-large;
-}
-
-#subname{
-    font-style: italic;
-    font-size: 12px;
-}
-
-#contact{
-    align-self: center;
-}
-
-#contactlinks{
-    font-size: x-small;
-}
-
-a.contactlink{
+    background-color: black;
     color: white;
-    text-decoration: none;
-    text-transform: lowercase;
+    float: left;
 }
 
-#about{
-    height: 15%;
+.topsidebar{
+    text-align: center;
+    height: 100%;
 }
 
-#education{
-    height: 15%;
-}
-
-.edu_line{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-.edu_date{
-    flex-shrink: 1;
-    flex-grow: 1;
-}
-
-.edu_data{
-    flex-grow: 10;
-}
-
-#experience{
-    height: 45%;
-}
-
-.exp_section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 3px;
-}
-
-.exp_date{
-    font-size: small;
-    margin-right: 3px;
-    width: 7%;
-}
-
-.exp_rightside{
+.bottomsidebar{
     display: flex;
     flex-direction: column;
-    margin-left: 3px;
+    align-content: center;
+    font-size: small;
+    float: bottom;
 }
 
-.exp_title{
+.contactlist{
+    list-style-type: none;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: rgba(155, 255, 6, 0.849);
+}
+
+.name{
+    font-size: 160%;
+    font-weight: bold;
+    transform: rotate(-90deg) translate(-40%,-65%);
+}
+
+.subname{
+    font-size: large;
+    font-style: italic;
+    transform: rotate(-90deg) translate(-25%,65%);
+}
+
+.contactheader{
     font-size: large;
     font-weight: bold;
+    text-align: center;
 }
 
-.exp_place{
+details{
+    font-size: large;
+    margin-left: 21%;
+    padding: 0;
+}
+
+.detail{
+    margin-left: 2%;
+}
+
+summary{
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.aboutme{
+    font-size: large;
+    margin-left: 22%;
+}
+
+.school{
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 22%;
+    margin-bottom: 0;
+}
+
+.gradyear{
+    font-size: normal;
+    font-weight: bold;
     font-style: italic;
+    margin-left: 23%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
 }
 
-.exp_list{
-    margin: 0px;
+.edudata{
+    font-size: large;
+    margin-left: 24%;
+    margin-top: 0;
+    padding-top: 5px;
 }
 
-.exp_bullets{
-    font-size: smaller;
+.jobtitle{
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 22%;
+    margin-bottom: 0;
 }
 
-#skills{
+.jobplace{
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 23%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.expdetails{
+    font-size: large;
+    margin-top: 0;
+    margin-left: 23%;
+    padding-top: 5px;
+}
+
+.skill-list{
+    margin-left: 22%;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    height: 100%;
+    flex-wrap: wrap;
+    max-height: 25vh;
+    max-width: 100%;
 }
 
 .skill{
-    display: flex;
-    flex-direction: row;
-    width: 33%;
+    margin-bottom: 0;
 }
 
-.fa-check{
-    flex-shrink: 1;
-    margin: 5px;
+@media screen and (max-width: 720px) {
+    aside{
+        width: 40%;
+    }
+    
+    .name{
+        font-size: normal;
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    .subname{
+        font-size: 80%;
+        transform: translate(0,0) rotate(0deg);
+    }
+
+    .summary{
+        padding-left: 2%;
+        font-size: 200%;
+    }
+
+    .bottomsidebar{
+        font-size: 20%;
+        align-content: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .contactheader{
+        font-size: normal;
+    }
+
+    .skill-list{
+        flex-wrap: nowrap;
+    }
 }
