@@ -7,7 +7,7 @@ body{
 }
 
 aside{
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,16 +47,18 @@ a:hover{
 }
 
 .name{
-    font-size: 160%;
+    font-size: 1.5em;
     font-weight: bold;
-    transform: rotate(-90deg) translate(-40%,-65%);
 }
 
 .subname{
-    font-size: large;
+    font-size: 1em;
     font-style: italic;
-    transform: rotate(-90deg) translate(-25%,65%);
 }
+
+.namesection{
+    width: 100%;
+ }
 
 .contactheader{
     font-size: large;
@@ -121,7 +123,7 @@ summary{
     font-size: larger;
     font-weight: bold;
     font-style: italic;
-    margin-left: 23%;
+    margin-left: 20%;
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 5px;
@@ -130,12 +132,12 @@ summary{
 .expdetails{
     font-size: large;
     margin-top: 0;
-    margin-left: 23%;
+    margin-left: 20%;
     padding-top: 5px;
 }
 
 .skill-list{
-    margin-left: 22%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -147,19 +149,31 @@ summary{
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1360px) {
+    .name{
+        font-size: 100%;
+    }
+    .subname{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
     aside{
-        width: 40%;
+        width: 30%;
     }
     
     .name{
         font-size: normal;
-        transform: translate(0,0) rotate(0deg);
+        padding-top: 20px;
     }
 
     .subname{
         font-size: 80%;
-        transform: translate(0,0) rotate(0deg);
+    }
+
+    .namesection{
+        transform: rotate(0);
     }
 
     .summary{
@@ -168,9 +182,9 @@ summary{
     }
 
     .bottomsidebar{
-        font-size: 20%;
+        font-size: 60%;
         align-content: left;
-        margin-left: 0;
+        margin-left: -20%;
         padding-left: 0;
     }
 
@@ -178,7 +192,47 @@ summary{
         font-size: normal;
     }
 
+    .aboutme{
+        font-size: 80%;
+        margin-left: 32%;
+    }
+
+    .education p{
+        margin-left: 32%;
+        font-size: 80%;
+    }
+
+    .education .school{
+        font-size: 90%;
+    }
+
+    .education .edudata{
+        font-size: 70%;
+    }
+
+    .experience p{
+        margin-left: 32%;
+        font-size: 80%;
+    }
+
+    .experience ul{
+        margin-left: 32%;
+        font-size: 70%;
+    }
+
     .skill-list{
         flex-wrap: nowrap;
+        margin-left: 32%;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottomsidebar{
+        font-size: .65em;
+    }
+    .contactheader{
+        font-size: 1.5em;
+        margin-left: 1em;
     }
 }

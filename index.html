@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <HTML>
     <HEAD>
-        <link rel="stylesheet" href="https://resume.bpetty.tech/lib/css/main.css">
-        <link rel="stylesheet" href="https://resume.bpetty.tech/lib/css/all.min.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://resume.bpetty.tech/lib/images//apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="https://resume.bpetty.tech/lib/images/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://resume.bpetty.tech/lib/images/favicon-16x16.png">
-        <link rel="manifest" href="https://resume.bpetty.tech/lib/images//site.webmanifest">
-        <link rel="mask-icon" href="https://resume.bpetty.tech/lib/images//safari-pinned-tab.svg" color="#ffffff">
+        <link rel="stylesheet" href="lib/css/main.css">
+        <link rel="stylesheet" href="lib/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="lib/images//apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="lib/images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="lib/images/favicon-16x16.png">
+        <link rel="manifest" href="lib/images//site.webmanifest">
+        <link rel="mask-icon" href="lib/images//safari-pinned-tab.svg" color="#ffffff">
         <meta name="msapplication-TileColor" content="#ccccff">
         <meta name="theme-color" content="#ccccff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://resume.bpetty.tech/lib/js/fontawesome-attribution.js"></script>
+        <script src="lib/js/fontawesome-attribution.js"></script>
+        <script src="lib/js/jquery-3.6.0.min.js"></script>
+        <script src="lib/js/mobilerender.js"></script>
         <title>Brian's Resume</title>
     </HEAD>
     <BODY>
         <aside>
             <div class="topsidebar">
-                <p class="name">Brian Petty</p>
-                <p class="subname">Information Systems Security</p>
+                <div class="namesection">
+                    <p class="name">Brian Petty</p>
+                    <p class="subname">Information Systems Security</p>
+                </div>
             </div>
             <div class="bottomsidebar">
                 <p class="contactheader">CONTACT</p>
@@ -26,31 +30,31 @@
                     <li>
                         <p class="contactlink">
                             <i class="fa fa-globe"></i>
-                            <a href="https://resume.bpetty.tech">https://resume.bpetty.tech</a>
+                            <a class="resumelink" href="https://resume.bpetty.tech">https://resume.bpetty.tech</a>
                         </p>
                     </li>
                     <li>
                         <p class="contactlink">
                             <i class="fa fa-envelope"></i>
-                            <a href="mailto://bwpetty@protonmail.com">bwpetty@protonmail.com</a>
+                            <a class="maillink" href="mailto://bwpetty@protonmail.com">bwpetty@protonmail.com</a>
                         </p>
                     </li>
                     <li>
                         <p class="contactlink">
                             <i class="fab fa-github"></i>
-                            <a href="https://github.com/BPetty-InfoSec">@BPetty-InfoSec</a>
+                            <a class="githublink" href="https://github.com/BPetty-InfoSec">@BPetty-InfoSec</a>
                         </p>
                     </li>
                     <li>
                         <p class="contactlink">
                             <i class="fab fa-twitter"></i>
-                            <a href="https://twitter.com/bpetty_infosec">@BPetty_InfoSec</a>
+                            <a class="twitterlink" href="https://twitter.com/bpetty_infosec">@BPetty_InfoSec</a>
                         </p>
                     </li>
                     <li>
                         <p class="contactlink">
                             <i class="fab fa-linkedin"></i>
-                            <a href="https://linkedin.com/in/bwpetty">/bwpetty</a>
+                            <a class="linkedinlink" href="https://linkedin.com/in/bwpetty">/bwpetty</a>
                         </p>
                     </li>
                 </ul>
@@ -66,7 +70,7 @@
             <p class="gradyear">Graduated: June 2020</p>
             <p class="edudata">Bachelors of Science in Information Systems Security, with a concentration in Cybersecurity</p>
         </details>
-        <details class="detail" open="open">
+        <details class="experience detail" open="open">
             <summary>EXPERIENCE</summary>
             <p class="jobtitle">Senior Technical Support Advisor - June 2020 to Present</p>
             <p class="jobplace">Concentrix</p>
