@@ -1,0 +1,249 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+aside{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: black;
+    color: white;
+    float: left;
+}
+
+.topsidebar{
+    text-align: center;
+    height: 100%;
+}
+
+.bottomsidebar{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: small;
+    float: bottom;
+}
+
+.contactlist{
+    list-style-type: none;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover{
+    color: rgba(155, 255, 6, 0.849);
+}
+
+.name{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.subname{
+    font-size: 1em;
+    font-style: italic;
+}
+
+.namesection{
+    width: 100%;
+ }
+
+.contactheader{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+details{
+    font-size: large;
+    margin-left: 21%;
+    padding: 0;
+}
+
+.detail{
+    margin-left: 2%;
+}
+
+summary{
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.aboutme{
+    font-size: large;
+    margin-left: 22%;
+}
+
+.school{
+    font-size: larger;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 22%;
+    margin-bottom: 0;
+}
+
+.gradyear{
+    font-size: normal;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 23%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.edudata{
+    font-size: large;
+    margin-left: 24%;
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.cert_name {
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 22%;
+}
+
+.jobtitle{
+    font-size: larger;
+    font-weight: bold;
+    margin-left: 22%;
+    margin-bottom: 0;
+}
+
+.jobplace{
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+}
+
+.expdetails{
+    font-size: large;
+    margin-top: 0;
+    margin-left: 20%;
+    padding-top: 5px;
+}
+
+.skill-list{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 50vh;
+    max-width: 100%;
+}
+
+.skill{
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1360px) {
+    .name{
+        font-size: 100%;
+    }
+    .subname{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    aside{
+        width: 30%;
+    }
+    
+    .name{
+        font-size: normal;
+        padding-top: 20px;
+    }
+
+    .subname{
+        font-size: 80%;
+    }
+
+    .namesection{
+        transform: rotate(0);
+    }
+
+    .summary{
+        padding-left: 2%;
+        font-size: 200%;
+    }
+
+    .bottomsidebar{
+        font-size: 60%;
+        align-content: left;
+        margin-left: -20%;
+        padding-left: 0;
+    }
+
+    .contactheader{
+        font-size: normal;
+    }
+
+    .aboutme{
+        font-size: 80%;
+        margin-left: 32%;
+    }
+
+    .education p{
+        margin-left: 32%;
+        font-size: 80%;
+    }
+
+    .education .school{
+        font-size: 90%;
+    }
+
+    .education .edudata{
+        font-size: 70%;
+    }
+    
+    .cert_name {
+        font-size: 90%;
+        margin-left: 32%;
+    }
+
+    .experience p{
+        margin-left: 32%;
+        font-size: 80%;
+    }
+
+    .experience ul{
+        margin-left: 32%;
+        font-size: 70%;
+    }
+
+    .skill-list{
+        flex-wrap: nowrap;
+        margin-left: 32%;
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottomsidebar{
+        font-size: .65em;
+    }
+    .contactheader{
+        font-size: 1.5em;
+        margin-left: 1em;
+    }
+}
