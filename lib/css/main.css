@@ -74,6 +74,7 @@ a:active {
 
 .CertBar {
     padding-left: 2vw;
+    padding-top: 1vh;
     background-color: var(--resume-blue-alpha);
     display: flex;
     flex-direction: column;
