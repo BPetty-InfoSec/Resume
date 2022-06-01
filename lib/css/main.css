@@ -1,238 +1,244 @@
-html{
-    height: 100%;
+:root {
+    --resume-blue: rgba(67, 90, 158);
+    --resume-blue-alpha: rgba(67, 90, 158, 0.5);
+    --header-font-color: rgba(243, 243, 129, 0.811);
+    --dark-font-color: rgb(0, 0, 48);
+    --dark-font-shadow-color: rgba(11, 11, 50, 0.514);
+    --header-shadow-color: rgb(47, 47, 3);
+    --link-color: rgb(232, 194, 60);
+    --link-hover-color: green;
 }
 
-body{
-    height: 100%;
+a:link {
+    color: var(--link-color);
 }
 
-aside{
-    width: 15%;
+a:visited {
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+a:active {
+    color: crimson;
+}
+
+.HeaderArea {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.HeaderFrame {
+    background: var(--resume-blue);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.HeaderName {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: xxx-large;
+    font-weight: bold;
+    color: var(--header-font-color);
+    text-shadow: 5px 5px var(--header-shadow-color);
+}
+
+.HeaderLine2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: xx-large;
+    color: var(--header-font-color);
+    text-shadow: 3px 3px var(--header-shadow-color);
+}
+
+.HeaderWebLink {
+    margin-top: 0px;
+    font-size: x-large;
+    color: var(--header-font-color);
+    text-shadow: 2px 2px var(--header-shadow-color);
+}
+
+.MainArea {
+    display: flex;
+    flex-direction: row;
+}
+
+.CertBar {
+    padding-left: 2vw;
+    background-color: var(--resume-blue-alpha);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    background-color: black;
-    color: white;
-    float: left;
+    width: 15vw
 }
 
-.topsidebar{
-    text-align: center;
-    height: 100%;
+.MainContent {
+    display: block;
+    background-color: var(--resume-blue-alpha);
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.bottomsidebar{
+.Footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--resume-blue);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.InfoLink {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    font-size: small;
-    float: bottom;
+    align-items: space-between;
+    align-items: center;
+    color: var(--header-font-color)
 }
 
-.contactlist{
-    list-style-type: none;
+.AboutMe {
+    padding-top: 1vh;
 }
 
-a:link{
-    color: white;
+.AboutMe_Text {
+    font-size: large;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
 }
 
-a:visited{
-    color: white;
+.SummaryLine {
+    font-size: x-large;
+    font-weight: bold;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
 }
 
-a:hover{
-    color: rgba(155, 255, 6, 0.849);
+.EducationBlock {
+    margin-top: 1vh;
+    margin-bottom: 0px;
 }
 
-.name{
-    font-size: 1.5em;
+.EducationTitleLine {
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);}
+
+.EducationDateLine {
+    font-size: x-large;
+    padding-left: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
+}
+
+.EducationTypeLine {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 4vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
+    }
+
+.EducationDescription {
+    font-size: large;
+    margin-top: 1vh;
+    margin-left: 6vw;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
+}
+
+.ExperienceBlock {
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
+}
+
+.ExperienceTitle {
+    margin-left: 2vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    font-size: x-large;
     font-weight: bold;
 }
 
-.subname{
-    font-size: 1em;
+.ExperienceLocation {
+    margin-left: 4vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
+    font-size: x-large;
     font-style: italic;
 }
 
-.namesection{
-    width: 100%;
- }
-
-.contactheader{
+.ExperienceDescription {
+    margin-left: 6vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
     font-size: large;
-    font-weight: bold;
-    text-align: center;
 }
 
-details{
+.ExperienceDescriptionDetails {
+    margin-left: 6vw;
+    margin-top: 1vh;
+    margin-bottom: 0px;
     font-size: large;
-    margin-left: 21%;
-    padding: 0;
 }
 
-.detail{
-    margin-left: 2%;
+.SkillsBlock {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color: var(--dark-font-color);
+    text-shadow: 1px 1px var(--dark-font-shadow-color);
 }
 
-summary{
-    font-size: 125%;
-    font-weight: bold;
-}
-
-.aboutme{
-    font-size: large;
-    margin-left: 22%;
-}
-
-.school{
-    font-size: larger;
-    font-weight: bold;
-    text-align: left;
-    margin-left: 22%;
-    margin-bottom: 0;
-}
-
-.gradyear{
-    font-size: normal;
-    font-weight: bold;
-    font-style: italic;
-    margin-left: 23%;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 5px;
-}
-
-.edudata{
-    font-size: large;
-    margin-left: 24%;
-    margin-top: 0;
-    padding-top: 5px;
-}
-
-.jobtitle{
-    font-size: larger;
-    font-weight: bold;
-    margin-left: 22%;
-    margin-bottom: 0;
-}
-
-.jobplace{
-    font-size: larger;
-    font-weight: bold;
-    font-style: italic;
-    margin-left: 20%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 5px;
-}
-
-.expdetails{
-    font-size: large;
-    margin-top: 0;
-    margin-left: 20%;
-    padding-top: 5px;
-}
-
-.skill-list{
-    margin-left: 20%;
+.SkillsList {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 25vh;
-    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.skill{
-    margin-bottom: 0;
+.SkillsLineItem {
+    padding-top: 1vh;
 }
 
-@media screen and (max-width: 1360px) {
-    .name{
-        font-size: 100%;
-    }
-    .subname{
-        font-size: 80%;
-    }
+.checkmark {
+    color: rgb(2, 214, 2);
+    text-shadow: 1px 1px rgba(10, 82, 10, 0.617);
 }
 
-@media screen and (max-width: 600px) {
-    aside{
-        width: 30%;
-    }
-    
-    .name{
-        font-size: normal;
-        padding-top: 20px;
-    }
-
-    .subname{
-        font-size: 80%;
-    }
-
-    .namesection{
-        transform: rotate(0);
-    }
-
-    .summary{
-        padding-left: 2%;
-        font-size: 200%;
-    }
-
-    .bottomsidebar{
-        font-size: 60%;
-        align-content: left;
-        margin-left: -20%;
-        padding-left: 0;
-    }
-
-    .contactheader{
-        font-size: normal;
-    }
-
-    .aboutme{
-        font-size: 80%;
-        margin-left: 32%;
-    }
-
-    .education p{
-        margin-left: 32%;
-        font-size: 80%;
-    }
-
-    .education .school{
-        font-size: 90%;
-    }
-
-    .education .edudata{
-        font-size: 70%;
-    }
-
-    .experience p{
-        margin-left: 32%;
-        font-size: 80%;
-    }
-
-    .experience ul{
-        margin-left: 32%;
-        font-size: 70%;
-    }
-
-    .skill-list{
-        flex-wrap: nowrap;
-        margin-left: 32%;
-        font-size: 80%;
-    }
+.SubListTitle {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 450px) {
-    .bottomsidebar{
-        font-size: .65em;
-    }
-    .contactheader{
-        font-size: 1.5em;
-        margin-left: 1em;
-    }
+.ITSkills {
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+.BusinessSkills {
+    margin-left: 2vw;
+    margin-top: 1vh;
+}
+
+.SoftSkills {
+    margin-left: 2vw;
+    margin-top: 1vh;
 }
